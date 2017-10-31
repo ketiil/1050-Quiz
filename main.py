@@ -17,7 +17,7 @@ def main():
         #Hovedmeny
         print("1: Start All Random \n")
         print("2: Start Kategorier \n")
-        print("(Q)uit \n")
+        print("(Q)uit \n") #Should be consistent in menu
 
         inpt = input("Input: ")
 
