@@ -18,6 +18,9 @@ def main():
         print("1: Start All Random \n")
         print("2: Start Kategorier \n")
         print("(Q)uit \n") #Should be consistent in menu
+        print("\n")
+        print("Andrea & Ketil (c) 2017")
+        print("\n")
 
         inpt = input("Input: ")
 
@@ -26,7 +29,7 @@ def main():
             quiz.clear_screen()
             quiz.lesFraFil("questions.txt")
             quiz.printQuestion()
-            quiz.getQuestion()
+            #quiz.getQuestion()
             while inpt != 'q':
 
                 #All Random meny
@@ -49,9 +52,9 @@ def main():
                 #Neste
                 elif inpt == "3":
                     quiz.clear_screen()
-                    quiz.lesFraFil("questions.txt") #Kjøres to ganger?
+                    quiz.getAvailableQs()
                     quiz.printQuestion()
-                    quiz.getQuestion()
+
                 #Return
                 elif inpt == "4":
                     break
@@ -74,5 +77,6 @@ main()
 # Kategorier                                                        #
 # Fylle ut spørsmålsliste                                           #
 # Se om vi får til å lage GUI mer sexy                              #
-# Hindre å gi samme spørsmål flere ganger                           #
+# Hindre å gi samme spørsmål flere ganger Done!                       #
 # Snakke om Way of Kings
+# Lage class Meny
