@@ -30,9 +30,11 @@ class Quiz:
 
     #Get question
     def getQuestion(self):
-        i = self.getRandIndex()
-        self._asked.append(i)
-        return self._question[i]
+        #i = self.getRandIndex()
+        #self._asked.append(i)
+        x = self.dontShowAgain()
+        self._asked.append(x)
+        return self._question[x]
 
     #Print question
     def printQuestion(self):
@@ -44,7 +46,22 @@ class Quiz:
         print(self._answer[i])
 
     def dontShowAgain(self):
-        pass
+        i = self.getRandIndex()
+        while i in self._asked:
+            i = self.getRandIndex()
+        #self._asked.append(i)
+        return i
+
+    def getAvailableQs(self):
+        if len(self._question) == len(self._asked):
+            print("No more questions left")
+            self.returnToMenu()
+
+    def returnToMenu(self):
+        inpt = input("Press Enter to return to menu")
+        if inpt == "":
+            print("Her skal man egentlig hoppe tilbake til menyen.")
+
 
     def saveForLater(self):
         pass
