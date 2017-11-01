@@ -58,3 +58,5 @@ class Quiz:
             execute("cls")
         else:
             execute("clear")
+
+            #hei
