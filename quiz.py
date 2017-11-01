@@ -10,6 +10,8 @@ class Quiz:
         self._question = []
         self._answer = []
         self._asked = []
+        self._saveForLater = []
+
         #self._ordbok = {}
         #self._teller = 0
 
@@ -47,10 +49,38 @@ class Quiz:
         pass
 
     def saveForLater(self):
+        i = self._asked[-1]
+        self._saveForLater.append(i)
+
+    def printSaveForLater(self):
         pass
 
-    def kategorier(self):
-        pass #heihei
+    def lesKategorier(self):
+        for linje in self._kategorier:
+            if linje[0] == '*':
+                print(linje[1:])
+        inp = input('Velg kategori: ')
+        return inp
+
+    def hentKategorisporsmaal(self):
+        for linje in self._kategorier:
+            if linje[0] is not '*':
+                biter = linje.split(':')
+                self._sporsmaal = biter[0]
+                self._svar = biter[1]
+                if sporsmaal == self.lesKategorier():
+                    print(sporsmaal[1:])
+
+
+
+
+
+
+
+
+
+
+
 
     def clear_screen(self):
         os = checkOS()

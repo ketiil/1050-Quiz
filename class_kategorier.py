@@ -15,17 +15,22 @@ class Kategorier:
           return self._kategorivalg
 
     def hentKategorisporsmaal(self):
+        #for linje in self._kategorier:
         for linje in open('kategorier.txt', 'r'):
+            #if linje[0] == self.lesKategorier()
             if linje[0] == self._kategorivalg:
                 biter = linje.split(':')
                 self._sporsmaal = biter[0]
                 self._svar = biter[1]
-                if self._sporsmaal not in self._spurt:
-                    print(self._sporsmaal[1:])
-                    inp = input('skriv 1 for svar')
-                    if inp == '1':
-                        print(self._svar)
-            self._spurt.append(self._sporsmaal)
+
+    def printSporsmaal(self):
+        if self._sporsmaal not in self._spurt:
+            print(self._sporsmaal[1:])
+        self._spurt.append(self._sporsmaal)
+
+    def printSvar(self):
+        print(self._svar)
+
 
 
 
