@@ -67,7 +67,7 @@ class Quiz:
         pass
 
     def kategorier(self):
-        pass
+        pass #heihei
 
     def clear_screen(self):
         os = checkOS()
@@ -75,3 +75,5 @@ class Quiz:
             execute("cls")
         else:
             execute("clear")
+
+            #hei

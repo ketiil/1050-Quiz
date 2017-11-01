@@ -1,0 +1,9 @@
+*1. Human-computer Interaction
+1Human-Computer Interaction : Human-Computer Interaction handler om samspillet mellom mennesker og teknologi
+1Interaksjonsdesign : nteraksjonsdesign går ut på å designe samhandlingen mellom mennesker og maskiner,
+*2. Kognisjon
+2Antagelser : Hvis vi tar noe som krever videre undersøkelse for gitt
+2mental modell : Mentale modeller er et internt kognitivt rammeverk som brukes til å forklare og forutse en brukers oppførsel,
+*3. Datainnsamling
+3Kvalitative data : Kvalitativ data er data som ikke kan måles eller regnes, for eksempel åpne svar med fritekst,
+3Kvantitative data : Kvantitativ data er direkte målt og kan telles eller regnes på.
